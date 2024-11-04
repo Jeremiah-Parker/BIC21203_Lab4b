@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2 Book</title>
+    </head>
+  <body>
+     
+  
+    <script>
+
+    const bookData = {
+        "books": [
+  
+       { 
+          "Book 1":{
+        "title": "The Great Gatsby",
+        "author": "F.Scott Fitzgerald",
+         "publicationYear": 1925,
+        "genres": "Fiction, Classics"
+          },
+
+
+         "Book 2":{
+         "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+         "publicationYear": 1960,
+        "genres": "Fiction, Coming-of-Age"
+         }
+     }
+
+       ] 
+     };
+
+
+     const books = bookData.books[0];
+
+
+     console.log("Title of the first book:", books["Book 1"].title);
+     console.log("Author of the second book:", books["Book 2"].author);
+
+
+     for(let book in books){
+        console.log(`Generes of ${book}`, books[book].genres);
+     }
+
+    </script>
+ </body>
+</html>
+
